@@ -1,0 +1,7 @@
+- name: "Installing Packages"
+  apt: pkg={{ item }} state=present
+  with_items:
+  - vim
+  - git
+  - terminator
+  - chromium-browser
